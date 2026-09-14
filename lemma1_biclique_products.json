@@ -1,0 +1,145 @@
+{
+  "source_file": "main_v1.tex",
+  "source_lemma_label": "lem:k4-k17",
+  "description": "44 products partitioning E(K4) x E(K17). Each product is E(K_{A,B}) x E(K_{C,D}), with the two vertex parts specified by left and right in each factor.",
+  "vertex_labels": {
+    "K4": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "K17": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ]
+  },
+  "K4_perfect_matchings": {
+    "M_1": [
+      [
+        "a",
+        "b"
+      ],
+      [
+        "c",
+        "d"
+      ]
+    ],
+    "M_2": [
+      [
+        "a",
+        "c"
+      ],
+      [
+        "b",
+        "d"
+      ]
+    ],
+    "M_3": [
+      [
+        "a",
+        "d"
+      ],
+      [
+        "b",
+        "c"
+      ]
+    ]
+  },
+  "construction": "For each i, pair C_i = K4 - M_i with each displayed biclique of G_i; pair each of the two individual edges of M_i with each displayed biclique of G_0 union G_i.",
+  "product_count": 44,
+  "verification": {
+    "K4_edge_count": 6,
+    "K17_edge_count": 136,
+    "edge_pair_count": 816,
+    "every_edge_pair_covered_exactly_once": true
+  },
+  "relabeling_from_manuscript": {
+    "K4": {
+      "1": "a",
+      "2": "b",
+      "3": "c",
+      "4": "d"
+    },
+    "K17": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "a": 10,
+      "b": 11,
+      "c": 12,
+      "d": 13,
+      "e": 14,
+      "f": 15,
+      "g": 16,
+      "h": 17
+    }
+  },
+  "products": [
+    {"id": 1, "source_graph": "G_1", "source_biclique_index": 1, "K4_biclique": {"left": ["a", "b"], "right": ["c", "d"]}, "K17_biclique": {"left": [2], "right": [1, 4, 5, 6, 10]}},
+    {"id": 2, "source_graph": "G_1", "source_biclique_index": 2, "K4_biclique": {"left": ["a", "b"], "right": ["c", "d"]}, "K17_biclique": {"left": [7], "right": [3, 5, 8, 15, 16]}},
+    {"id": 3, "source_graph": "G_1", "source_biclique_index": 3, "K4_biclique": {"left": ["a", "b"], "right": ["c", "d"]}, "K17_biclique": {"left": [11], "right": [3, 4, 9, 12, 15]}},
+    {"id": 4, "source_graph": "G_1", "source_biclique_index": 4, "K4_biclique": {"left": ["a", "b"], "right": ["c", "d"]}, "K17_biclique": {"left": [14], "right": [6, 9, 10, 13, 16]}},
+    {"id": 5, "source_graph": "G_1", "source_biclique_index": 5, "K4_biclique": {"left": ["a", "b"], "right": ["c", "d"]}, "K17_biclique": {"left": [3], "right": [4, 8]}},
+    {"id": 6, "source_graph": "G_1", "source_biclique_index": 6, "K4_biclique": {"left": ["a", "b"], "right": ["c", "d"]}, "K17_biclique": {"left": [6], "right": [5, 13]}},
+    {"id": 7, "source_graph": "G_1", "source_biclique_index": 7, "K4_biclique": {"left": ["a", "b"], "right": ["c", "d"]}, "K17_biclique": {"left": [10], "right": [1, 9]}},
+    {"id": 8, "source_graph": "G_1", "source_biclique_index": 8, "K4_biclique": {"left": ["a", "b"], "right": ["c", "d"]}, "K17_biclique": {"left": [15], "right": [12, 16]}},
+    {"id": 9, "source_graph": "G_0 union G_1", "source_biclique_index": 1, "K4_biclique": {"left": ["a"], "right": ["b"]}, "K17_biclique": {"left": [2, 3], "right": [1, 4, 5, 6, 7, 8, 10, 11]}},
+    {"id": 10, "source_graph": "G_0 union G_1", "source_biclique_index": 1, "K4_biclique": {"left": ["c"], "right": ["d"]}, "K17_biclique": {"left": [2, 3], "right": [1, 4, 5, 6, 7, 8, 10, 11]}},
+    {"id": 11, "source_graph": "G_0 union G_1", "source_biclique_index": 2, "K4_biclique": {"left": ["a"], "right": ["b"]}, "K17_biclique": {"left": [6, 7], "right": [5, 8, 13, 16]}},
+    {"id": 12, "source_graph": "G_0 union G_1", "source_biclique_index": 2, "K4_biclique": {"left": ["c"], "right": ["d"]}, "K17_biclique": {"left": [6, 7], "right": [5, 8, 13, 16]}},
+    {"id": 13, "source_graph": "G_0 union G_1", "source_biclique_index": 3, "K4_biclique": {"left": ["a"], "right": ["b"]}, "K17_biclique": {"left": [10, 11], "right": [1, 4, 9, 12]}},
+    {"id": 14, "source_graph": "G_0 union G_1", "source_biclique_index": 3, "K4_biclique": {"left": ["c"], "right": ["d"]}, "K17_biclique": {"left": [10, 11], "right": [1, 4, 9, 12]}},
+    {"id": 15, "source_graph": "G_0 union G_1", "source_biclique_index": 4, "K4_biclique": {"left": ["a"], "right": ["b"]}, "K17_biclique": {"left": [14, 15], "right": [6, 7, 9, 10, 11, 12, 13, 16]}},
+    {"id": 16, "source_graph": "G_0 union G_1", "source_biclique_index": 4, "K4_biclique": {"left": ["c"], "right": ["d"]}, "K17_biclique": {"left": [14, 15], "right": [6, 7, 9, 10, 11, 12, 13, 16]}},
+    {"id": 17, "source_graph": "G_2", "source_biclique_index": 1, "K4_biclique": {"left": ["a", "c"], "right": ["b", "d"]}, "K17_biclique": {"left": [2], "right": [3, 13, 17]}},
+    {"id": 18, "source_graph": "G_2", "source_biclique_index": 2, "K4_biclique": {"left": ["a", "c"], "right": ["b", "d"]}, "K17_biclique": {"left": [5], "right": [8, 13, 15, 16]}},
+    {"id": 19, "source_graph": "G_2", "source_biclique_index": 3, "K4_biclique": {"left": ["a", "c"], "right": ["b", "d"]}, "K17_biclique": {"left": [1, 9, 10], "right": [5, 6, 7, 8, 13, 17]}},
+    {"id": 20, "source_graph": "G_2", "source_biclique_index": 4, "K4_biclique": {"left": ["a", "c"], "right": ["b", "d"]}, "K17_biclique": {"left": [1, 2, 3, 4, 12], "right": [9]}},
+    {"id": 21, "source_graph": "G_2", "source_biclique_index": 5, "K4_biclique": {"left": ["a", "c"], "right": ["b", "d"]}, "K17_biclique": {"left": [5, 6, 13], "right": [11, 12, 17]}},
+    {"id": 22, "source_graph": "G_2", "source_biclique_index": 6, "K4_biclique": {"left": ["a", "c"], "right": ["b", "d"]}, "K17_biclique": {"left": [1, 2, 5, 15, 17], "right": [14]}},
+    {"id": 23, "source_graph": "G_0 union G_2", "source_biclique_index": 1, "K4_biclique": {"left": ["a"], "right": ["c"]}, "K17_biclique": {"left": [1, 2], "right": [3, 7, 8, 9, 11, 17]}},
+    {"id": 24, "source_graph": "G_0 union G_2", "source_biclique_index": 1, "K4_biclique": {"left": ["b"], "right": ["d"]}, "K17_biclique": {"left": [1, 2], "right": [3, 7, 8, 9, 11, 17]}},
+    {"id": 25, "source_graph": "G_0 union G_2", "source_biclique_index": 2, "K4_biclique": {"left": ["a"], "right": ["c"]}, "K17_biclique": {"left": [5, 6], "right": [1, 3, 8, 11, 12, 15, 16, 17]}},
+    {"id": 26, "source_graph": "G_0 union G_2", "source_biclique_index": 2, "K4_biclique": {"left": ["b"], "right": ["d"]}, "K17_biclique": {"left": [5, 6], "right": [1, 3, 8, 11, 12, 15, 16, 17]}},
+    {"id": 27, "source_graph": "G_0 union G_2", "source_biclique_index": 3, "K4_biclique": {"left": ["a"], "right": ["c"]}, "K17_biclique": {"left": [9, 10], "right": [3, 4, 5, 6, 7, 8, 12, 13, 15, 17]}},
+    {"id": 28, "source_graph": "G_0 union G_2", "source_biclique_index": 3, "K4_biclique": {"left": ["b"], "right": ["d"]}, "K17_biclique": {"left": [9, 10], "right": [3, 4, 5, 6, 7, 8, 12, 13, 15, 17]}},
+    {"id": 29, "source_graph": "G_0 union G_2", "source_biclique_index": 4, "K4_biclique": {"left": ["a"], "right": ["c"]}, "K17_biclique": {"left": [13, 14], "right": [1, 2, 5, 7, 11, 12, 15, 17]}},
+    {"id": 30, "source_graph": "G_0 union G_2", "source_biclique_index": 4, "K4_biclique": {"left": ["b"], "right": ["d"]}, "K17_biclique": {"left": [13, 14], "right": [1, 2, 5, 7, 11, 12, 15, 17]}},
+    {"id": 31, "source_graph": "G_3", "source_biclique_index": 1, "K4_biclique": {"left": ["a", "d"], "right": ["b", "c"]}, "K17_biclique": {"left": [4, 7], "right": [6, 12, 17]}},
+    {"id": 32, "source_graph": "G_3", "source_biclique_index": 2, "K4_biclique": {"left": ["a", "d"], "right": ["b", "c"]}, "K17_biclique": {"left": [3, 8], "right": [13, 14, 16, 17]}},
+    {"id": 33, "source_graph": "G_3", "source_biclique_index": 3, "K4_biclique": {"left": ["a", "d"], "right": ["b", "c"]}, "K17_biclique": {"left": [1, 5, 7, 8, 13, 14, 15, 16], "right": [4]}},
+    {"id": 34, "source_graph": "G_3", "source_biclique_index": 4, "K4_biclique": {"left": ["a", "d"], "right": ["b", "c"]}, "K17_biclique": {"left": [1, 2, 3, 8, 17], "right": [12, 15]}},
+    {"id": 35, "source_graph": "G_3", "source_biclique_index": 5, "K4_biclique": {"left": ["a", "d"], "right": ["b", "c"]}, "K17_biclique": {"left": [1, 2, 9, 10, 12, 13, 17], "right": [16]}},
+    {"id": 36, "source_graph": "G_3", "source_biclique_index": 6, "K4_biclique": {"left": ["a", "d"], "right": ["b", "c"]}, "K17_biclique": {"left": [7, 8, 10, 16, 17], "right": [11]}},
+    {"id": 37, "source_graph": "G_0 union G_3", "source_biclique_index": 1, "K4_biclique": {"left": ["a"], "right": ["d"]}, "K17_biclique": {"left": [3, 4], "right": [1, 5, 6, 10, 12, 13, 14, 17]}},
+    {"id": 38, "source_graph": "G_0 union G_3", "source_biclique_index": 1, "K4_biclique": {"left": ["b"], "right": ["c"]}, "K17_biclique": {"left": [3, 4], "right": [1, 5, 6, 10, 12, 13, 14, 17]}},
+    {"id": 39, "source_graph": "G_0 union G_3", "source_biclique_index": 2, "K4_biclique": {"left": ["a"], "right": ["d"]}, "K17_biclique": {"left": [7, 8], "right": [2, 4, 6, 11, 12, 13, 14, 17]}},
+    {"id": 40, "source_graph": "G_0 union G_3", "source_biclique_index": 2, "K4_biclique": {"left": ["b"], "right": ["c"]}, "K17_biclique": {"left": [7, 8], "right": [2, 4, 6, 11, 12, 13, 14, 17]}},
+    {"id": 41, "source_graph": "G_0 union G_3", "source_biclique_index": 3, "K4_biclique": {"left": ["a"], "right": ["d"]}, "K17_biclique": {"left": [11, 12], "right": [1, 2, 10, 14, 16, 17]}},
+    {"id": 42, "source_graph": "G_0 union G_3", "source_biclique_index": 3, "K4_biclique": {"left": ["b"], "right": ["c"]}, "K17_biclique": {"left": [11, 12], "right": [1, 2, 10, 14, 16, 17]}},
+    {"id": 43, "source_graph": "G_0 union G_3", "source_biclique_index": 4, "K4_biclique": {"left": ["a"], "right": ["d"]}, "K17_biclique": {"left": [15, 16], "right": [1, 2, 3, 4, 6, 8, 9, 10, 13, 17]}},
+    {"id": 44, "source_graph": "G_0 union G_3", "source_biclique_index": 4, "K4_biclique": {"left": ["b"], "right": ["c"]}, "K17_biclique": {"left": [15, 16], "right": [1, 2, 3, 4, 6, 8, 9, 10, 13, 17]}}
+  ]
+}
